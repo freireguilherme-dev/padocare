@@ -1,0 +1,7 @@
+{
+  "name": "padocare",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
