@@ -1,16 +1,44 @@
-<ion-header [translucent]="true">
-
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="panel">
+    <div class="header">
+      <ion-button href="" color="none">
+        <ion-icon name="menu-outline" size="large"></ion-icon>
+      </ion-button>
+      <ion-chip>
+        <ion-avatar>
+          <img alt="Avatar" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-avatar>
+        <ion-label>Usuário</ion-label>
+      </ion-chip>
+    </div>
+    <div class="content">
+      <div class="left-menu">
+        <a href="" >
+          <ion-icon name="bluetooth-outline"></ion-icon>
+        </a>
+        <a href="" >
+          <ion-icon name="mic-outline"></ion-icon>
+        </a>
+      </div>
+      <div class="center-menu">
+        <a href="" class="btn-open">
+          <span class="traco superior"></span>
+          <img alt="Logo Padocare" src="../../assets/icon/pado-icon.svg" />
+          <span class="center-circle"></span>
+          <span class="traco inferior"></span>
+        </a>
+      </div>
+      <div class="right-menu">
+        <a href="" >
+          <ion-icon name="wifi-outline"></ion-icon>
+        </a>
+        <a href="" >
+          <ion-icon name="cog"></ion-icon>
+        </a>
+      </div>
+    </div>
+    <div class="footer">
+      <img alt="Logo Padocare" src="../../assets/logo.png" />
+    </div>
   </div>
 </ion-content>
