@@ -18,7 +18,7 @@
           <ion-row>
             <ion-col size="6" *ngFor="let button of menuButtons">
               <div class="menu-button">
-                <a href="{{button.url}}" color="none">
+                <a href="{{button.url}}" class="{{button.classe}}" >
                   <ion-icon name="{{button.icon}}" size="large">
                   </ion-icon>
                   <span>{{button.description}}</span>

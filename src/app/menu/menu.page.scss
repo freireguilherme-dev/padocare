@@ -9,7 +9,7 @@
   .content{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 10% 90%;
     justify-items: center;
     align-items: center;
 
@@ -33,19 +33,30 @@
 
       .menu-button{
 
-        ion-button{
+        a{
           background-color: #DE2B6E;
-          height: 70%;
+          height: 100px;
+          width: 120px;
           border-radius: 5px;
           margin: 30px 10px 20px 10px;
           display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
           color: black;
+          text-decoration: none;
+          padding: 10px;
 
           span{
-            font-size: 10px;
+            font-size: 14px;
+            font-weight: bold;
             font-family: 'Orbitron';
-            text-wrap: wrap;
+            text-align: center;
           }
+
+        }
+        .sair{
+          background-color: #3f3f3f;
         }
       }
     }

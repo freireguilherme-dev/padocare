@@ -8,12 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class MenuPage implements OnInit {
 
   public menuButtons: Array<Button> = [
-    new Button('Perfil De Usuário', 'person-outline', ''),
-    new Button('Gerenciar Usuários', 'people-outline', ''),
-    new Button('Registro De Acessos', 'newspaper-outline', ''),
-    new Button('Conexões', 'radio-outline', ''),
-    new Button('Configurações', 'cog-outline', ''),
-    new Button('Sair', 'log-out-outline', ''),
+    new Button('Perfil De Usuário', 'person-outline', '', ''),
+    new Button('Gerenciar Usuários', 'people-outline', '', ''),
+    new Button('Registro De Acessos', 'newspaper-outline', '', ''),
+    new Button('Conexões', 'radio-outline', '', ''),
+    new Button('Configurações', 'cog', '', ''),
+    new Button('Sair', 'log-out-outline', '', 'sair'),
   ]
 
   constructor() { }
@@ -24,5 +24,5 @@ export class MenuPage implements OnInit {
 }
 
 class Button {
-  constructor(public description: String, public icon: String, public url: String) {}
+  constructor(public description: String, public icon: String, public url: String, public classe: String) {}
 }
