@@ -1,1 +1,10 @@
-{}
+{
+  "plugins": {
+    "CapacitorHttp": {
+      "enabled": true
+    },
+    "BluetoothLe": {
+      "permissions": ["BLUETOOTH", "BLUETOOTH_ADMIN"]
+    }
+  }
+}

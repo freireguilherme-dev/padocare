@@ -13,24 +13,24 @@
     </div>
     <div class="content">
       <div class="left-menu">
-        <a href="" >
-          <ion-icon name="bluetooth-outline"></ion-icon>
+        <a (click)="ativarBluetooth()">
+          <ion-icon name="bluetooth-outline" [ngStyle]="{'color': bluetooth ? '#2bde61' : 'black'}"></ion-icon>
         </a>
         <a href="" >
           <ion-icon name="mic-outline"></ion-icon>
         </a>
       </div>
       <div class="center-menu">
-        <a href="" class="btn-open">
-          <span class="traco superior"></span>
-          <img alt="Logo Padocare" src="../../assets/icon/pado-icon.svg" />
-          <span class="center-circle"></span>
-          <span class="traco inferior"></span>
+        <a (click)="sendRequest()" class="btn-open" [ngClass]="{'bg-default': !status, 'bg-opened': status}" >
+          <span class="traco superior" [ngStyle]="{'background-color': status ? '#2bde61' : '#DE2B6E'}"></span>
+          <img alt="Logo Padocare" src="../../assets/icon/pado-icon.svg"/>
+          <span class="traco inferior" [ngStyle]="{'background-color': status ? '#2bde61' : '#DE2B6E'}"></span>
+          <span class="center-circle" [ngStyle]="{'border-color': status ? '#2bde61' : '#DE2B6E'}"></span>
         </a>
       </div>
       <div class="right-menu">
-        <a href="" >
-          <ion-icon name="wifi-outline"></ion-icon>
+        <a (click)="ativarWifi()">
+          <ion-icon name="wifi-outline" [ngStyle]="{'color': wifi ? '#2bde61' : 'black'}"></ion-icon>
         </a>
         <a href="" >
           <ion-icon name="cog"></ion-icon>

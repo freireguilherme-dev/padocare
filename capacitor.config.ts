@@ -5,7 +5,26 @@ const config: CapacitorConfig = {
   appName: 'padocare',
   webDir: 'www',
   server: {
-    androidScheme: 'https'
+    androidScheme: 'http'
+  },
+  plugins: {
+    CapacitorHttp: {
+      enabled: true,
+    },
+    "BluetoothLe": {
+      "displayStrings": {
+        "scanning": "Escaneando dispositivos...",
+        "cancel": "Cancelar",
+        "availableDevices": "Dispositivos disponíveis",
+        "noDeviceFound": "Nenhum dispositivo encontrado"
+      }
+    }
+  },
+  cordova: {
+    preferences: {
+      bluetooth_restore_state: "true",
+      accessBackgroundLocation: "false",
+    },
   }
 };
 

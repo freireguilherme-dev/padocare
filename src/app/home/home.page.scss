@@ -21,9 +21,9 @@
       height: 100%;
       align-items: center;
       justify-content: center;
+
       .btn-open{
-        background-color: #DE2B6E;
-        background: linear-gradient(90deg, rgba(222,43,110,0.3785889355742297) 0%, rgba(222,43,110,0.258140756302521) 35%, rgba(222,43,110,0.12648809523809523) 100%);
+
 
         border-radius: 50%;
         width: 300px;
@@ -36,6 +36,16 @@
           width: 50%;
           height: 50%;
         }
+      }
+
+      .bg-default{
+        background-color: #DE2B6E;
+        background: linear-gradient(90deg, rgba(222,43,110,0.3785889355742297) 0%, rgba(222,43,110,0.258140756302521) 35%, rgba(222,43,110,0.12648809523809523) 100%);
+      }
+
+      .bg-opened{
+        background-color: #2bde61;
+        background: linear-gradient(90deg, rgba(43, 222, 52, 0.379) 0%, rgba(43, 222, 58, 0.258) 35%, rgba(43, 222, 52, 0.126) 100%);
       }
 
       .center-circle{
