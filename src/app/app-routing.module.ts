@@ -18,6 +18,26 @@ const routes: Routes = [
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
+  {
+    path: 'perfil-user',
+    loadChildren: () => import('./perfil-user/perfil-user.module').then( m => m.PerfilUserPageModule)
+  },
+  {
+    path: 'conexoes',
+    loadChildren: () => import('./conexoes/conexoes.module').then( m => m.ConexoesPageModule)
+  },
+  {
+    path: 'configuracoes',
+    loadChildren: () => import('./configuracoes/configuracoes.module').then( m => m.ConfiguracoesPageModule)
+  },
+  {
+    path: 'conexoes',
+    loadChildren: () => import('./conexoes/conexoes.module').then( m => m.ConexoesPageModule)
+  },
+  {
+    path: 'conexoes',
+    loadChildren: () => import('./conexoes/conexoes.module').then( m => m.ConexoesPageModule)
+  },
 
 ];
 

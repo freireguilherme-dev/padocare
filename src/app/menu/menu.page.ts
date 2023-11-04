@@ -10,10 +10,10 @@ export class MenuPage implements OnInit {
   constructor(  private navController: NavController) { }
 
   public menuButtons: Array<Button> = [
-    new Button('Perfil De Usuário', 'person-outline', '', '', () => { this.navController.navigateForward('/menu')}),
+    new Button('Perfil De Usuário', 'person-outline', '', '', () => { this.navController.navigateForward('/perfil-user')}),
     new Button('Gerenciar Usuários', 'people-outline', '', '', () => { this.navController.navigateForward('/menu')}),
     new Button('Registro De Acessos', 'newspaper-outline', '', '', () => { this.navController.navigateForward('/menu')}),
-    new Button('Conexões', 'radio-outline', '', '', () => { this.navController.navigateForward('/menu')}),
+    new Button('Conexões', 'radio-outline', '', '', () => { this.navController.navigateForward('/conexoes')}),
     new Button('Configurações', 'cog', '', '', () => { this.navController.navigateForward('/menu')}),
     new Button('Sair', 'log-out-outline', null, 'sair', () => {this.navController.navigateForward('/login')}),
   ]
