@@ -8,8 +8,7 @@ import { ConexoesPageRoutingModule } from './conexoes-routing.module';
 
 import { ConexoesPage } from './conexoes.page';
 
-import { BluetoothLEOriginal } from '@awesome-cordova-plugins/bluetooth-le';
-import { BluetoothService } from 'src/app/services/bluetooth.service';
+import { BluetoothLEOriginal } from '@awesome-cordova-plugins/bluetooth-le';;
 
 
 @NgModule({
@@ -18,11 +17,6 @@ import { BluetoothService } from 'src/app/services/bluetooth.service';
     FormsModule,
     IonicModule,
     ConexoesPageRoutingModule
-  ],
-  providers: [
-    BluetoothLEOriginal,
-      BluetoothService,
-
   ],
   declarations: [ConexoesPage]
 })

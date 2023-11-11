@@ -31,23 +31,6 @@
             </ion-item>
           </ion-list>
         </ion-card>
-        <ion-card>
-          <ion-item>
-            <ion-icon aria-hidden="true" name="bluetooth" slot="start"></ion-icon>
-            <ion-toggle>
-              <ion-label>Bluetooth</ion-label>
-              <ion-note color="medium">Ativar/Desativar Bluetooth</ion-note>
-            </ion-toggle>
-          </ion-item>
-          <ion-content>
-            <ion-button (click)="buscarDispositivosBluetooth()">Buscar Dispositivos Bluetooth</ion-button>
-            <ion-list>
-              <ion-item *ngFor="let dispositivo of dispositivosBluetooth">
-                {{ dispositivo.name }}
-              </ion-item>
-            </ion-list>
-          </ion-content>
-        </ion-card>
       </ion-list>
     </div>
     <div class="footer">
