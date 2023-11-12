@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./perfil-user.page.scss'],
 })
 export class PerfilUserPage implements OnInit {
+openHome() {
+throw new Error('Method not implemented.');
+}
 
   constructor() { }
 

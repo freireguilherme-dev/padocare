@@ -7,6 +7,9 @@ import { WifiService } from '../services/wifi.service';
   styleUrls: ['./conexoes.page.scss'],
 })
 export class ConexoesPage implements OnInit {
+openHome() {
+throw new Error('Method not implemented.');
+}
   redesWifi: string[] = [];
 
   constructor(private wifiService: WifiService) {}
