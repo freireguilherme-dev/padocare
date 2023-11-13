@@ -8,8 +8,6 @@ import { ConexoesPageRoutingModule } from './conexoes-routing.module';
 
 import { ConexoesPage } from './conexoes.page';
 
-import { BluetoothLEOriginal } from '@awesome-cordova-plugins/bluetooth-le';;
-
 
 @NgModule({
   imports: [
